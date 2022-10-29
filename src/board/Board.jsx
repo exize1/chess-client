@@ -1,12 +1,4 @@
 import "./board.scss"
-import {
-    FaChessPawn,
-    FaChessKing,
-    FaChessQueen,
-    FaChessKnight,
-    FaChessBishop,
-    FaChessRook
-} from "react-icons/fa"
 
 const Board = () => {
 
