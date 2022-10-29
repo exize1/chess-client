@@ -1,0 +1,18 @@
+.board-container{
+    display: grid;
+    grid-template-columns: repeat(8, [col-start] 11vw);
+    grid-template-rows: repeat(8, [row-start] 11vw);
+    background-color: #85BBD9;
+
+}
+
+$rows: one two three four five six seven eight;
+$columns: h g f e d c b a;
+
+@each $row in $rows {
+    @each $column in $columns{
+       .#{$row + $column}{
+         background-color: #F8FFB2
+    } 
+    }
+}
