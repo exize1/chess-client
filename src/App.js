@@ -4,7 +4,7 @@ import io from 'socket.io-client'
 import { useState } from 'react';
 import Home from './2.Home';
 
-export const socket = io.connect("http://localhost:3001")
+export const socket = io.connect(process.env.REACT_APP_SERVER_URL)
 
 function App() {
 
