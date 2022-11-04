@@ -1,0 +1,125 @@
+.add-product-btn{
+    min-width: max-content;
+}
+
+.modal-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+}
+
+.modal-fade-container{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+    height: fit-content;
+    width: 40%;
+}
+
+@media only screen and (max-width: 850px){
+    .modal-fade-container{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .modal-fade-container{
+        width: 80%;
+    }
+}
+
+.large{
+    width: 85%;
+}
+
+.add-overflow{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-title-contianer{
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-body-contianer{
+    margin-top: 20px;
+    max-height: 64vh;
+    padding: 0px 30px;
+}
+
+.demo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.demo-card-container{
+    position: absolute;
+    cursor: pointer;
+}
+
+.click-here-icon{
+    position: absolute;
+    bottom: 14%;
+    left: 5%;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 800px){
+
+    .demo-card-container{
+        top: 30%
+    }
+
+    .demo-card-title{
+        font-size: 1.5rem;
+    }
+
+    .click-here-icon{
+        position: absolute;
+        bottom: 18%;
+        left: 5%;
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    .demo-card-container{
+        top: 65%;
+        right: 1%;
+    }
+    
+}
+
+.modal-footer-contianer{
+    padding: 2% 3%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    height: fit-content;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.popup-alert{
+    position: absolute;
+    top: 1%;
+    width: 35%;
+    opacity: 90%;
+}
+
+.close-btn{
+    margin-right: 3% ;
+}
+
+.error-message{
+    color: red;
+}

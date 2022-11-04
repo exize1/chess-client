@@ -1,7 +1,7 @@
 import "./board.scss"
 
-const Board = () => {
 
+const Board = () => {
     const columns = ["h", "g", "f", "e", "d", "c", "b" ,"a"]
     const rows = [
         [1, "one"], 
@@ -14,7 +14,7 @@ const Board = () => {
         [8, "eight"]]
         
     return(
-        <div className="board-container">
+        <div className={`board-container `}>
             {rows.map((row, index) =>{
                 return(
                     <>
@@ -37,7 +37,6 @@ const Board = () => {
                         </>
                 )
             })}
-            
         </div>
     )
 }

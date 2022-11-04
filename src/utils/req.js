@@ -1,9 +1,15 @@
 import { publicRequest } from "../requestMethods"
 
-export const getGame = (setId, setBoard) => {
-    publicRequest.get('/position')
+export const getGame = (setBoard, room) => {
+    publicRequest.get(`/position/${room}`)
     .then(res => {
-        res.data && setId(res.data[0]._id) 
-        res.data && setBoard(res.data[0].board)
+        res.data && setBoard(res.data.board)
       })
   }
+
+  export const getEngineMove = (setBoard, engineId) => {
+    publicRequest.get(`/engine/${engineId}`)
+    .then(res => {
+        res.data && setBoard(res.data[0].board)
+      })
+  }  

@@ -12,12 +12,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 93vh;
     width: 90%;    
     border-radius: 4px;
     box-shadow: 0px 0px 2px 8px rgb(101, 101, 101);
     background-color: rgb(101, 101, 101);
-
 }
 
 .elemnt-3D{
@@ -40,4 +40,34 @@
     border-radius: 3px;
     width: 88vw;
     height: 88vw;
+}
+
+.rotate-board{
+    transform: rotate(180deg);
+}
+
+.alert-container{
+    position: absolute;
+    z-index: 100;
+    top: 8%;
+    border-radius: 13px;
+    width: 80%;
+}
+
+.success{
+    background-color: rgba(119, 224, 119, 0.9);
+    border: 1px solid green;
+    color: rgb(0, 98, 0);
+}
+
+.danger{
+    background-color: rgba(241, 103, 103, 0.687);
+    border: 1px solid rgb(240, 47, 47);
+    color: rgb(111, 12, 12);
+}
+
+
+
+@media only screen and (max-width: 800px){
+    
 }

@@ -100,7 +100,6 @@ export const findTheKing = (board, whiteTurn) => {
     return kingPosition
 }
 
-
 export const isProtectedVassle = (board, whiteTurn, pieceType, piecePosition, piecePossibleMoves) => {
     const validMoves = []
     piecePossibleMoves.forEach(move => {

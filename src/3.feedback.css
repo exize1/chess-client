@@ -1,0 +1,17 @@
+.feedback-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.input{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+input:focus-visible {
+    outline: none;
+}
