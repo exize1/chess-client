@@ -158,10 +158,10 @@ const Movment = ({ board, setBoard, room, engineGame, engineId, setIsCheckmate }
     // }, [setBoard])
 
 
-    const aMove = (updatedboard, whiteTurn) => {
-        setWhiteTurn(!whiteTurn)
-        socket.emit('make_the_move', { updatedboard, whiteTurn })
-    }
+    // const aMove = (updatedboard, whiteTurn) => {
+    //     setWhiteTurn(!whiteTurn)
+    //     socket.emit('make_the_move', { updatedboard, whiteTurn })
+    // }
     return(
         <>           
         <div className={selected ? "selected" :"positions-container"}>
