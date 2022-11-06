@@ -4,7 +4,7 @@ import io from 'socket.io-client'
 import { useState } from 'react';
 import Home from './2.Home';
 
-export const socket = io(process.env.REACT_APP_SERVER_URL)
+// export const socket = io(process.env.REACT_APP_SERVER_URL)
 
 function App() {
 
