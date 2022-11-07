@@ -10,7 +10,7 @@ function Home({ setNewGame,  setRoom, setEengineId, setEengineGame }) {
         publicRequest.post('/position')
             .then((res) => {
                 console.log(`created room ${res.data.room}`);
-                // socket.emit("creat_room", res.data.room)
+                socket.emit("creat_room", res.data.room)
                 window.sessionStorage.setItem("white",  res.data.white)
                 setRoom(res.data.room)
             })

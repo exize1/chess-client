@@ -130,7 +130,7 @@ const Movment = ({ board, setBoard, room, engineGame, engineId, setIsCheckmate }
         setBoard(splitedBoard.join(""))
 
         check(splitedBoard, !whiteTurn) && setIsCheck(!isCheck)
-        // aMove(splitedBoard.join(""), whiteTurn)
+        aMove(splitedBoard.join(""), whiteTurn)
 
         checkmate(splitedBoard, !whiteTurn, setIsCheckmate)
     }
@@ -150,18 +150,18 @@ const Movment = ({ board, setBoard, room, engineGame, engineId, setIsCheckmate }
     //     ischeckmate ? new Audio(checkmateSound).play() : new Audio(sound).play()
     // }
 
-    // useEffect(() => {
-    //     socket.on("cach_the_move", data => {
-    //         setBoard(data.updatedboard)
-    //         setWhiteTurn(!data.whiteTurn)
-    //       })
-    // }, [setBoard])
+    useEffect(() => {
+        socket.on("cach_the_move", data => {
+            setBoard(data.updatedboard)
+            setWhiteTurn(!data.whiteTurn)
+          })
+    }, [setBoard])
 
 
-    // const aMove = (updatedboard, whiteTurn) => {
-    //     setWhiteTurn(!whiteTurn)
-    //     socket.emit('make_the_move', { updatedboard, whiteTurn })
-    // }
+    const aMove = (updatedboard, whiteTurn) => {
+        setWhiteTurn(!whiteTurn)
+        socket.emit('make_the_move', { updatedboard, whiteTurn })
+    }
     return(
         <>           
         <div className={selected ? "selected" :"positions-container"}>
